@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB59A1BB2AA95D6C00AD74FC /* EngineController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CB59A17E2AA95D6C00AD74FC /* EngineController.mm */; };
+		CB59A1BC2AA95D6C00AD74FC /* CommandQueue.mm in Sources */ = {isa = PBXBuildFile; fileRef = CB59A1802AA95D6C00AD74FC /* CommandQueue.mm */; };
+		CB59A1BD2AA95D6C00AD74FC /* EngineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB59A1822AA95D6C00AD74FC /* EngineManager.m */; };
+		CB59A2F02AAA0CAE00AD74FC /* thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB59A2BC2AAA0CAD00AD74FC /* thread.cpp */; };
+		CB59A2F12AAA0CAE00AD74FC /* timeman.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB59A2BD2AAA0CAD00AD74FC /* timeman.cpp */; };
+		CB59A2F22AAA0CAE00AD74FC /* ucioption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB59A2BE2AAA0CAD00AD74FC /* ucioption.cpp */; };
+		CB59A2F32AAA0CAE00AD74FC /* evaluate_nnue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB59A2C02AAA0CAD00AD74FC /* evaluate_nnue.cpp */; };
+		CB59A2F42AAA0CAE00AD74FC /* half_ka_v2_hm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB59A2CA2AAA0CAD00AD74FC /* half_ka_v2_hm.cpp */; };
+		CB59A2F52AAA0CAE00AD74FC /* misc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB59A2D02AAA0CAD00AD74FC /* misc.cpp */; };
+		CB59A2F62AAA0CAE00AD74FC /* bitboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB59A2D32AAA0CAD00AD74FC /* bitboard.cpp */; };
+		CB59A2F72AAA0CAE00AD74FC /* iosextension.mm in Sources */ = {isa = PBXBuildFile; fileRef = CB59A2D52AAA0CAD00AD74FC /* iosextension.mm */; };
+		CB59A2F82AAA0CAE00AD74FC /* benchmark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB59A2D62AAA0CAD00AD74FC /* benchmark.cpp */; };
+		CB59A2F92AAA0CAE00AD74FC /* movepick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB59A2D72AAA0CAD00AD74FC /* movepick.cpp */; };
+		CB59A2FA2AAA0CAE00AD74FC /* tune.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB59A2D92AAA0CAD00AD74FC /* tune.cpp */; };
+		CB59A2FB2AAA0CAE00AD74FC /* evaluate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB59A2DA2AAA0CAD00AD74FC /* evaluate.cpp */; };
+		CB59A2FC2AAA0CAE00AD74FC /* search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB59A2DD2AAA0CAD00AD74FC /* search.cpp */; };
+		CB59A2FD2AAA0CAE00AD74FC /* zip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB59A2E22AAA0CAD00AD74FC /* zip.cpp */; };
+		CB59A2FE2AAA0CAE00AD74FC /* movegen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB59A2E62AAA0CAD00AD74FC /* movegen.cpp */; };
+		CB59A2FF2AAA0CAE00AD74FC /* tt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB59A2E72AAA0CAD00AD74FC /* tt.cpp */; };
+		CB59A3012AAA0CAE00AD74FC /* position.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB59A2EE2AAA0CAD00AD74FC /* position.cpp */; };
+		CB59A3022AAA0CAE00AD74FC /* uci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB59A2EF2AAA0CAD00AD74FC /* uci.cpp */; };
+		CB59A3042AAA0DCB00AD74FC /* entry.nnue in Resources */ = {isa = PBXBuildFile; fileRef = CB59A3032AAA0DCB00AD74FC /* entry.nnue */; };
+		CB90B9142AA2E3E900FC52FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB90B9132AA2E3E900FC52FD /* AppDelegate.swift */; };
+		CB90B9162AA2E3E900FC52FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB90B9152AA2E3E900FC52FD /* SceneDelegate.swift */; };
+		CB90B9182AA2E3E900FC52FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB90B9172AA2E3E900FC52FD /* ViewController.swift */; };
+		CB90B91B2AA2E3E900FC52FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB90B9192AA2E3E900FC52FD /* Main.storyboard */; };
+		CB90B91D2AA2E3EC00FC52FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB90B91C2AA2E3EC00FC52FD /* Assets.xcassets */; };
+		CB90B9202AA2E3EC00FC52FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB90B91E2AA2E3EC00FC52FD /* LaunchScreen.storyboard */; };
+		CB90B92B2AA2E3ED00FC52FD /* pikayuchinachessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB90B92A2AA2E3ED00FC52FD /* pikayuchinachessTests.swift */; };
+		CB90B9352AA2E3ED00FC52FD /* pikayuchinachessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB90B9342AA2E3ED00FC52FD /* pikayuchinachessUITests.swift */; };
+		CB90B9372AA2E3ED00FC52FD /* pikayuchinachessUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB90B9362AA2E3ED00FC52FD /* pikayuchinachessUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB90B9272AA2E3ED00FC52FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB90B9082AA2E3E900FC52FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB90B90F2AA2E3E900FC52FD;
+			remoteInfo = pikayuchinachess;
+		};
+		CB90B9312AA2E3ED00FC52FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB90B9082AA2E3E900FC52FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB90B90F2AA2E3E900FC52FD;
+			remoteInfo = pikayuchinachess;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB59A17D2AA95D6C00AD74FC /* EngineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngineController.h; sourceTree = "<group>"; };
+		CB59A17E2AA95D6C00AD74FC /* EngineController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EngineController.mm; sourceTree = "<group>"; };
+		CB59A17F2AA95D6C00AD74FC /* EngineManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngineManager.h; sourceTree = "<group>"; };
+		CB59A1802AA95D6C00AD74FC /* CommandQueue.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CommandQueue.mm; sourceTree = "<group>"; };
+		CB59A1812AA95D6C00AD74FC /* ChessEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChessEngine.h; sourceTree = "<group>"; };
+		CB59A1822AA95D6C00AD74FC /* EngineManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EngineManager.m; sourceTree = "<group>"; };
+		CB59A1832AA95D6C00AD74FC /* CommandQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandQueue.h; sourceTree = "<group>"; };
+		CB59A2BC2AAA0CAD00AD74FC /* thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = thread.cpp; sourceTree = "<group>"; };
+		CB59A2BD2AAA0CAD00AD74FC /* timeman.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timeman.cpp; sourceTree = "<group>"; };
+		CB59A2BE2AAA0CAD00AD74FC /* ucioption.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ucioption.cpp; sourceTree = "<group>"; };
+		CB59A2C02AAA0CAD00AD74FC /* evaluate_nnue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = evaluate_nnue.cpp; sourceTree = "<group>"; };
+		CB59A2C22AAA0CAD00AD74FC /* affine_transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = affine_transform.h; sourceTree = "<group>"; };
+		CB59A2C32AAA0CAD00AD74FC /* sqr_clipped_relu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqr_clipped_relu.h; sourceTree = "<group>"; };
+		CB59A2C42AAA0CAD00AD74FC /* clipped_relu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clipped_relu.h; sourceTree = "<group>"; };
+		CB59A2C52AAA0CAD00AD74FC /* input_slice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = input_slice.h; sourceTree = "<group>"; };
+		CB59A2C62AAA0CAD00AD74FC /* simd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simd.h; sourceTree = "<group>"; };
+		CB59A2C72AAA0CAD00AD74FC /* nnue_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nnue_common.h; sourceTree = "<group>"; };
+		CB59A2C82AAA0CAD00AD74FC /* nnue_feature_transformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nnue_feature_transformer.h; sourceTree = "<group>"; };
+		CB59A2CA2AAA0CAD00AD74FC /* half_ka_v2_hm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = half_ka_v2_hm.cpp; sourceTree = "<group>"; };
+		CB59A2CB2AAA0CAD00AD74FC /* half_ka_v2_hm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = half_ka_v2_hm.h; sourceTree = "<group>"; };
+		CB59A2CC2AAA0CAD00AD74FC /* evaluate_nnue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evaluate_nnue.h; sourceTree = "<group>"; };
+		CB59A2CD2AAA0CAD00AD74FC /* nnue_accumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nnue_accumulator.h; sourceTree = "<group>"; };
+		CB59A2CE2AAA0CAD00AD74FC /* nnue_architecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nnue_architecture.h; sourceTree = "<group>"; };
+		CB59A2CF2AAA0CAD00AD74FC /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		CB59A2D02AAA0CAD00AD74FC /* misc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = misc.cpp; sourceTree = "<group>"; };
+		CB59A2D12AAA0CAD00AD74FC /* tune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tune.h; sourceTree = "<group>"; };
+		CB59A2D22AAA0CAD00AD74FC /* misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = misc.h; sourceTree = "<group>"; };
+		CB59A2D32AAA0CAD00AD74FC /* bitboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bitboard.cpp; sourceTree = "<group>"; };
+		CB59A2D42AAA0CAD00AD74FC /* magics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = magics.h; sourceTree = "<group>"; };
+		CB59A2D52AAA0CAD00AD74FC /* iosextension.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iosextension.mm; sourceTree = "<group>"; };
+		CB59A2D62AAA0CAD00AD74FC /* benchmark.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = benchmark.cpp; sourceTree = "<group>"; };
+		CB59A2D72AAA0CAD00AD74FC /* movepick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = movepick.cpp; sourceTree = "<group>"; };
+		CB59A2D82AAA0CAD00AD74FC /* bitboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitboard.h; sourceTree = "<group>"; };
+		CB59A2D92AAA0CAD00AD74FC /* tune.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tune.cpp; sourceTree = "<group>"; };
+		CB59A2DA2AAA0CAD00AD74FC /* evaluate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = evaluate.cpp; sourceTree = "<group>"; };
+		CB59A2DB2AAA0CAD00AD74FC /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		CB59A2DC2AAA0CAD00AD74FC /* movegen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movegen.h; sourceTree = "<group>"; };
+		CB59A2DD2AAA0CAD00AD74FC /* search.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = search.cpp; sourceTree = "<group>"; };
+		CB59A2DE2AAA0CAD00AD74FC /* thread_win32_osx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread_win32_osx.h; sourceTree = "<group>"; };
+		CB59A2E02AAA0CAD00AD74FC /* miniz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = miniz.h; sourceTree = "<group>"; };
+		CB59A2E12AAA0CAD00AD74FC /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		CB59A2E22AAA0CAD00AD74FC /* zip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zip.cpp; sourceTree = "<group>"; };
+		CB59A2E32AAA0CAD00AD74FC /* movepick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movepick.h; sourceTree = "<group>"; };
+		CB59A2E42AAA0CAD00AD74FC /* iosextension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iosextension.h; sourceTree = "<group>"; };
+		CB59A2E52AAA0CAD00AD74FC /* evaluate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evaluate.h; sourceTree = "<group>"; };
+		CB59A2E62AAA0CAD00AD74FC /* movegen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = movegen.cpp; sourceTree = "<group>"; };
+		CB59A2E72AAA0CAD00AD74FC /* tt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tt.cpp; sourceTree = "<group>"; };
+		CB59A2E82AAA0CAD00AD74FC /* search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = search.h; sourceTree = "<group>"; };
+		CB59A2E92AAA0CAD00AD74FC /* tt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tt.h; sourceTree = "<group>"; };
+		CB59A2EB2AAA0CAD00AD74FC /* uci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uci.h; sourceTree = "<group>"; };
+		CB59A2EC2AAA0CAD00AD74FC /* position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = position.h; sourceTree = "<group>"; };
+		CB59A2ED2AAA0CAD00AD74FC /* timeman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timeman.h; sourceTree = "<group>"; };
+		CB59A2EE2AAA0CAD00AD74FC /* position.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = position.cpp; sourceTree = "<group>"; };
+		CB59A2EF2AAA0CAD00AD74FC /* uci.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uci.cpp; sourceTree = "<group>"; };
+		CB59A3032AAA0DCB00AD74FC /* entry.nnue */ = {isa = PBXFileReference; lastKnownFileType = file; path = entry.nnue; sourceTree = "<group>"; };
+		CB90B9102AA2E3E900FC52FD /* pikayuchinachess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pikayuchinachess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB90B9132AA2E3E900FC52FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB90B9152AA2E3E900FC52FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CB90B9172AA2E3E900FC52FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB90B91A2AA2E3E900FC52FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB90B91C2AA2E3EC00FC52FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB90B91F2AA2E3EC00FC52FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB90B9212AA2E3EC00FC52FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB90B9262AA2E3ED00FC52FD /* pikayuchinachessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pikayuchinachessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB90B92A2AA2E3ED00FC52FD /* pikayuchinachessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pikayuchinachessTests.swift; sourceTree = "<group>"; };
+		CB90B9302AA2E3ED00FC52FD /* pikayuchinachessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pikayuchinachessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB90B9342AA2E3ED00FC52FD /* pikayuchinachessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pikayuchinachessUITests.swift; sourceTree = "<group>"; };
+		CB90B9362AA2E3ED00FC52FD /* pikayuchinachessUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pikayuchinachessUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB90B9922AA2E56800FC52FD /* pikayuchinachess-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pikayuchinachess-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB90B90D2AA2E3E900FC52FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB90B9232AA2E3ED00FC52FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB90B92D2AA2E3ED00FC52FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB59A17C2AA95D6C00AD74FC /* ChessEngine */ = {
+			isa = PBXGroup;
+			children = (
+				CB59A17D2AA95D6C00AD74FC /* EngineController.h */,
+				CB59A17E2AA95D6C00AD74FC /* EngineController.mm */,
+				CB59A17F2AA95D6C00AD74FC /* EngineManager.h */,
+				CB59A1802AA95D6C00AD74FC /* CommandQueue.mm */,
+				CB59A1812AA95D6C00AD74FC /* ChessEngine.h */,
+				CB59A1822AA95D6C00AD74FC /* EngineManager.m */,
+				CB59A1832AA95D6C00AD74FC /* CommandQueue.h */,
+				CB59A3032AAA0DCB00AD74FC /* entry.nnue */,
+				CB59A2BB2AAA0CAD00AD74FC /* src */,
+			);
+			path = ChessEngine;
+			sourceTree = "<group>";
+		};
+		CB59A2BB2AAA0CAD00AD74FC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CB59A2BC2AAA0CAD00AD74FC /* thread.cpp */,
+				CB59A2BD2AAA0CAD00AD74FC /* timeman.cpp */,
+				CB59A2BE2AAA0CAD00AD74FC /* ucioption.cpp */,
+				CB59A2BF2AAA0CAD00AD74FC /* nnue */,
+				CB59A2CF2AAA0CAD00AD74FC /* types.h */,
+				CB59A2D02AAA0CAD00AD74FC /* misc.cpp */,
+				CB59A2D12AAA0CAD00AD74FC /* tune.h */,
+				CB59A2D22AAA0CAD00AD74FC /* misc.h */,
+				CB59A2D32AAA0CAD00AD74FC /* bitboard.cpp */,
+				CB59A2D42AAA0CAD00AD74FC /* magics.h */,
+				CB59A2D52AAA0CAD00AD74FC /* iosextension.mm */,
+				CB59A2D62AAA0CAD00AD74FC /* benchmark.cpp */,
+				CB59A2D72AAA0CAD00AD74FC /* movepick.cpp */,
+				CB59A2D82AAA0CAD00AD74FC /* bitboard.h */,
+				CB59A2D92AAA0CAD00AD74FC /* tune.cpp */,
+				CB59A2DA2AAA0CAD00AD74FC /* evaluate.cpp */,
+				CB59A2DB2AAA0CAD00AD74FC /* thread.h */,
+				CB59A2DC2AAA0CAD00AD74FC /* movegen.h */,
+				CB59A2DD2AAA0CAD00AD74FC /* search.cpp */,
+				CB59A2DE2AAA0CAD00AD74FC /* thread_win32_osx.h */,
+				CB59A2DF2AAA0CAD00AD74FC /* compression */,
+				CB59A2E32AAA0CAD00AD74FC /* movepick.h */,
+				CB59A2E42AAA0CAD00AD74FC /* iosextension.h */,
+				CB59A2E52AAA0CAD00AD74FC /* evaluate.h */,
+				CB59A2E62AAA0CAD00AD74FC /* movegen.cpp */,
+				CB59A2E72AAA0CAD00AD74FC /* tt.cpp */,
+				CB59A2E82AAA0CAD00AD74FC /* search.h */,
+				CB59A2E92AAA0CAD00AD74FC /* tt.h */,
+				CB59A2EB2AAA0CAD00AD74FC /* uci.h */,
+				CB59A2EC2AAA0CAD00AD74FC /* position.h */,
+				CB59A2ED2AAA0CAD00AD74FC /* timeman.h */,
+				CB59A2EE2AAA0CAD00AD74FC /* position.cpp */,
+				CB59A2EF2AAA0CAD00AD74FC /* uci.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		CB59A2BF2AAA0CAD00AD74FC /* nnue */ = {
+			isa = PBXGroup;
+			children = (
+				CB59A2C02AAA0CAD00AD74FC /* evaluate_nnue.cpp */,
+				CB59A2C12AAA0CAD00AD74FC /* layers */,
+				CB59A2C72AAA0CAD00AD74FC /* nnue_common.h */,
+				CB59A2C82AAA0CAD00AD74FC /* nnue_feature_transformer.h */,
+				CB59A2C92AAA0CAD00AD74FC /* features */,
+				CB59A2CC2AAA0CAD00AD74FC /* evaluate_nnue.h */,
+				CB59A2CD2AAA0CAD00AD74FC /* nnue_accumulator.h */,
+				CB59A2CE2AAA0CAD00AD74FC /* nnue_architecture.h */,
+			);
+			path = nnue;
+			sourceTree = "<group>";
+		};
+		CB59A2C12AAA0CAD00AD74FC /* layers */ = {
+			isa = PBXGroup;
+			children = (
+				CB59A2C22AAA0CAD00AD74FC /* affine_transform.h */,
+				CB59A2C32AAA0CAD00AD74FC /* sqr_clipped_relu.h */,
+				CB59A2C42AAA0CAD00AD74FC /* clipped_relu.h */,
+				CB59A2C52AAA0CAD00AD74FC /* input_slice.h */,
+				CB59A2C62AAA0CAD00AD74FC /* simd.h */,
+			);
+			path = layers;
+			sourceTree = "<group>";
+		};
+		CB59A2C92AAA0CAD00AD74FC /* features */ = {
+			isa = PBXGroup;
+			children = (
+				CB59A2CA2AAA0CAD00AD74FC /* half_ka_v2_hm.cpp */,
+				CB59A2CB2AAA0CAD00AD74FC /* half_ka_v2_hm.h */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		CB59A2DF2AAA0CAD00AD74FC /* compression */ = {
+			isa = PBXGroup;
+			children = (
+				CB59A2E02AAA0CAD00AD74FC /* miniz.h */,
+				CB59A2E12AAA0CAD00AD74FC /* zip.h */,
+				CB59A2E22AAA0CAD00AD74FC /* zip.cpp */,
+			);
+			path = compression;
+			sourceTree = "<group>";
+		};
+		CB90B9072AA2E3E900FC52FD = {
+			isa = PBXGroup;
+			children = (
+				CB90B9122AA2E3E900FC52FD /* pikayuchinachess */,
+				CB90B9292AA2E3ED00FC52FD /* pikayuchinachessTests */,
+				CB90B9332AA2E3ED00FC52FD /* pikayuchinachessUITests */,
+				CB90B9112AA2E3E900FC52FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB90B9112AA2E3E900FC52FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB90B9102AA2E3E900FC52FD /* pikayuchinachess.app */,
+				CB90B9262AA2E3ED00FC52FD /* pikayuchinachessTests.xctest */,
+				CB90B9302AA2E3ED00FC52FD /* pikayuchinachessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB90B9122AA2E3E900FC52FD /* pikayuchinachess */ = {
+			isa = PBXGroup;
+			children = (
+				CB90B9132AA2E3E900FC52FD /* AppDelegate.swift */,
+				CB90B9152AA2E3E900FC52FD /* SceneDelegate.swift */,
+				CB90B9172AA2E3E900FC52FD /* ViewController.swift */,
+				CB90B9192AA2E3E900FC52FD /* Main.storyboard */,
+				CB90B91C2AA2E3EC00FC52FD /* Assets.xcassets */,
+				CB90B91E2AA2E3EC00FC52FD /* LaunchScreen.storyboard */,
+				CB59A17C2AA95D6C00AD74FC /* ChessEngine */,
+				CB90B9212AA2E3EC00FC52FD /* Info.plist */,
+				CB90B9922AA2E56800FC52FD /* pikayuchinachess-Bridging-Header.h */,
+			);
+			path = pikayuchinachess;
+			sourceTree = "<group>";
+		};
+		CB90B9292AA2E3ED00FC52FD /* pikayuchinachessTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB90B92A2AA2E3ED00FC52FD /* pikayuchinachessTests.swift */,
+			);
+			path = pikayuchinachessTests;
+			sourceTree = "<group>";
+		};
+		CB90B9332AA2E3ED00FC52FD /* pikayuchinachessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB90B9342AA2E3ED00FC52FD /* pikayuchinachessUITests.swift */,
+				CB90B9362AA2E3ED00FC52FD /* pikayuchinachessUITestsLaunchTests.swift */,
+			);
+			path = pikayuchinachessUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB90B90F2AA2E3E900FC52FD /* pikayuchinachess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB90B93A2AA2E3ED00FC52FD /* Build configuration list for PBXNativeTarget "pikayuchinachess" */;
+			buildPhases = (
+				CB90B90C2AA2E3E900FC52FD /* Sources */,
+				CB90B90D2AA2E3E900FC52FD /* Frameworks */,
+				CB90B90E2AA2E3E900FC52FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pikayuchinachess;
+			productName = pikayuchinachess;
+			productReference = CB90B9102AA2E3E900FC52FD /* pikayuchinachess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB90B9252AA2E3ED00FC52FD /* pikayuchinachessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB90B93D2AA2E3ED00FC52FD /* Build configuration list for PBXNativeTarget "pikayuchinachessTests" */;
+			buildPhases = (
+				CB90B9222AA2E3ED00FC52FD /* Sources */,
+				CB90B9232AA2E3ED00FC52FD /* Frameworks */,
+				CB90B9242AA2E3ED00FC52FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB90B9282AA2E3ED00FC52FD /* PBXTargetDependency */,
+			);
+			name = pikayuchinachessTests;
+			productName = pikayuchinachessTests;
+			productReference = CB90B9262AA2E3ED00FC52FD /* pikayuchinachessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB90B92F2AA2E3ED00FC52FD /* pikayuchinachessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB90B9402AA2E3ED00FC52FD /* Build configuration list for PBXNativeTarget "pikayuchinachessUITests" */;
+			buildPhases = (
+				CB90B92C2AA2E3ED00FC52FD /* Sources */,
+				CB90B92D2AA2E3ED00FC52FD /* Frameworks */,
+				CB90B92E2AA2E3ED00FC52FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB90B9322AA2E3ED00FC52FD /* PBXTargetDependency */,
+			);
+			name = pikayuchinachessUITests;
+			productName = pikayuchinachessUITests;
+			productReference = CB90B9302AA2E3ED00FC52FD /* pikayuchinachessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB90B9082AA2E3E900FC52FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CB90B90F2AA2E3E900FC52FD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CB90B9252AA2E3ED00FC52FD = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CB90B90F2AA2E3E900FC52FD;
+					};
+					CB90B92F2AA2E3ED00FC52FD = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CB90B90F2AA2E3E900FC52FD;
+					};
+				};
+			};
+			buildConfigurationList = CB90B90B2AA2E3E900FC52FD /* Build configuration list for PBXProject "pikayuchinachess" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB90B9072AA2E3E900FC52FD;
+			productRefGroup = CB90B9112AA2E3E900FC52FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB90B90F2AA2E3E900FC52FD /* pikayuchinachess */,
+				CB90B9252AA2E3ED00FC52FD /* pikayuchinachessTests */,
+				CB90B92F2AA2E3ED00FC52FD /* pikayuchinachessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB90B90E2AA2E3E900FC52FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB59A3042AAA0DCB00AD74FC /* entry.nnue in Resources */,
+				CB90B9202AA2E3EC00FC52FD /* LaunchScreen.storyboard in Resources */,
+				CB90B91D2AA2E3EC00FC52FD /* Assets.xcassets in Resources */,
+				CB90B91B2AA2E3E900FC52FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB90B9242AA2E3ED00FC52FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB90B92E2AA2E3ED00FC52FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB90B90C2AA2E3E900FC52FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB59A2FE2AAA0CAE00AD74FC /* movegen.cpp in Sources */,
+				CB59A2F32AAA0CAE00AD74FC /* evaluate_nnue.cpp in Sources */,
+				CB59A3012AAA0CAE00AD74FC /* position.cpp in Sources */,
+				CB59A2FA2AAA0CAE00AD74FC /* tune.cpp in Sources */,
+				CB90B9182AA2E3E900FC52FD /* ViewController.swift in Sources */,
+				CB59A1BC2AA95D6C00AD74FC /* CommandQueue.mm in Sources */,
+				CB59A2F42AAA0CAE00AD74FC /* half_ka_v2_hm.cpp in Sources */,
+				CB59A2FC2AAA0CAE00AD74FC /* search.cpp in Sources */,
+				CB90B9142AA2E3E900FC52FD /* AppDelegate.swift in Sources */,
+				CB59A2FB2AAA0CAE00AD74FC /* evaluate.cpp in Sources */,
+				CB59A2F52AAA0CAE00AD74FC /* misc.cpp in Sources */,
+				CB59A2F82AAA0CAE00AD74FC /* benchmark.cpp in Sources */,
+				CB59A2FF2AAA0CAE00AD74FC /* tt.cpp in Sources */,
+				CB59A2F22AAA0CAE00AD74FC /* ucioption.cpp in Sources */,
+				CB59A2F62AAA0CAE00AD74FC /* bitboard.cpp in Sources */,
+				CB59A1BB2AA95D6C00AD74FC /* EngineController.mm in Sources */,
+				CB90B9162AA2E3E900FC52FD /* SceneDelegate.swift in Sources */,
+				CB59A2F92AAA0CAE00AD74FC /* movepick.cpp in Sources */,
+				CB59A3022AAA0CAE00AD74FC /* uci.cpp in Sources */,
+				CB59A2FD2AAA0CAE00AD74FC /* zip.cpp in Sources */,
+				CB59A2F02AAA0CAE00AD74FC /* thread.cpp in Sources */,
+				CB59A1BD2AA95D6C00AD74FC /* EngineManager.m in Sources */,
+				CB59A2F12AAA0CAE00AD74FC /* timeman.cpp in Sources */,
+				CB59A2F72AAA0CAE00AD74FC /* iosextension.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB90B9222AA2E3ED00FC52FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB90B92B2AA2E3ED00FC52FD /* pikayuchinachessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB90B92C2AA2E3ED00FC52FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB90B9372AA2E3ED00FC52FD /* pikayuchinachessUITestsLaunchTests.swift in Sources */,
+				CB90B9352AA2E3ED00FC52FD /* pikayuchinachessUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB90B9282AA2E3ED00FC52FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB90B90F2AA2E3E900FC52FD /* pikayuchinachess */;
+			targetProxy = CB90B9272AA2E3ED00FC52FD /* PBXContainerItemProxy */;
+		};
+		CB90B9322AA2E3ED00FC52FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB90B90F2AA2E3E900FC52FD /* pikayuchinachess */;
+			targetProxy = CB90B9312AA2E3ED00FC52FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB90B9192AA2E3E900FC52FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB90B91A2AA2E3E900FC52FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB90B91E2AA2E3EC00FC52FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB90B91F2AA2E3EC00FC52FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB90B9382AA2E3ED00FC52FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB90B9392AA2E3ED00FC52FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB90B93B2AA2E3ED00FC52FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 498HN9XWYY;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/pikayuchinachess/include\"";
+				INFOPLIST_FILE = pikayuchinachess/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/pikayuchinachess",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chicdcnes.aictsdfhuasifds.pikayuchinachess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "pikayuchinachess/pikayuchinachess-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB90B93C2AA2E3ED00FC52FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 498HN9XWYY;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/pikayuchinachess/include\"";
+				INFOPLIST_FILE = pikayuchinachess/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/pikayuchinachess",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chicdcnes.aictsdfhuasifds.pikayuchinachess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "pikayuchinachess/pikayuchinachess-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB90B93E2AA2E3ED00FC52FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 498HN9XWYY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chicdcnes.aictsdfhuasifds.pikayuchinachessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pikayuchinachess.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pikayuchinachess";
+			};
+			name = Debug;
+		};
+		CB90B93F2AA2E3ED00FC52FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 498HN9XWYY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chicdcnes.aictsdfhuasifds.pikayuchinachessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pikayuchinachess.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pikayuchinachess";
+			};
+			name = Release;
+		};
+		CB90B9412AA2E3ED00FC52FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 498HN9XWYY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chicdcnes.aictsdfhuasifds.pikayuchinachessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pikayuchinachess;
+			};
+			name = Debug;
+		};
+		CB90B9422AA2E3ED00FC52FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 498HN9XWYY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chicdcnes.aictsdfhuasifds.pikayuchinachessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pikayuchinachess;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB90B90B2AA2E3E900FC52FD /* Build configuration list for PBXProject "pikayuchinachess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB90B9382AA2E3ED00FC52FD /* Debug */,
+				CB90B9392AA2E3ED00FC52FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB90B93A2AA2E3ED00FC52FD /* Build configuration list for PBXNativeTarget "pikayuchinachess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB90B93B2AA2E3ED00FC52FD /* Debug */,
+				CB90B93C2AA2E3ED00FC52FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB90B93D2AA2E3ED00FC52FD /* Build configuration list for PBXNativeTarget "pikayuchinachessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB90B93E2AA2E3ED00FC52FD /* Debug */,
+				CB90B93F2AA2E3ED00FC52FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB90B9402AA2E3ED00FC52FD /* Build configuration list for PBXNativeTarget "pikayuchinachessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB90B9412AA2E3ED00FC52FD /* Debug */,
+				CB90B9422AA2E3ED00FC52FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB90B9082AA2E3E900FC52FD /* Project object */;
+}
